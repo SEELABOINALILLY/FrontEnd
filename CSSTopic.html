@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal css -->
+     <style>
+        /* type or element selector*/
+        p{
+            background-color: pink;
+        }
+        /* class Selector*/
+        .example{
+            color:blue;
+        }  
+        /*Id selector*/
+        #example{
+            color: palevioletred;
+        } 
+        /* universal selector */
+        *{
+            background-color: pink;
+        }  
+        /* Descendant selector */
+        div h1{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        } 
+         /* child selector */
+        ul>li{
+            font-size: larger;
+        } 
+         /* Attribute selector */
+        input[type="text"]{
+            border: 1px solid blue;
+            border-radius: 20px;
+        } 
+         /* Group selector */ 
+        h3,h4,h5{
+            font-style: oblique;
+        }
+     </style>
+     <!-- External css -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Inline css -->
+    <p style="color: blue;">Lilly Sri</p>
+
+    <!-- class selector -->
+     <div class="example">First class</div>
+
+     <!-- Id selector -->
+     <br><div id="example">First class</div>
+
+     <!-- Descendant selector -->
+     <div>
+        <h1>This is Descendant selector</h1>
+     </div> 
+     
+     <!-- child selector -->
+     <ul>
+        <li>Lilly</li>
+        <li>Sri</li>
+     </ul>
+
+     <!-- Attribute selector -->      
+      <form action=""><input type="text"></form>
+
+      <!-- Group Selector -->
+       <h3>lilly</h3>
+       <h4>sri</h4>
+       <h5>durga</h5>
+
+</body>
+</html>
