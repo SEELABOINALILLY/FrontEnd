@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxdetails{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(6, 99, 99);
+            position: relative;
+            animation-name: Lilly;
+            animation-duration:2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Lilly{
+            0%{left: 0;}
+            50%{left: 200px; transform: rotate(180deg);}
+            100%{left:0}
+        }
+    </style>
+</head>
+<body>
+    <div class="boxdetails"></div>
+    <!-- Display:table -->
+     <br><br><div style="display:table; width: 100px; height: 100px; background-color:pink" >
+        <div style="display: table-row;">
+            <div style="display: table-cell; padding:20px; background-color:aqua">cell1</div>
+            <div style="display: table-cell; padding:20px; background-color:rgb(106, 114, 114)">cell2</div>
+            <div style="display: table-cell; padding:20px; background-color:rgb(186, 209, 209)">cell3</div>
+        </div>
+        <div style="display: table-row;">
+            <div style="display: table-cell; padding:20px; background-color:rgb(38, 255, 0)">cell4</div>
+            <div style="display: table-cell; padding:20px; background-color:rgb(206, 227, 16)">cell5</div>
+            <div style="display: table-cell; padding:20px; background-color:rgb(209, 198, 186)">cell6</div>
+        </div>
+     </div>
+</body>
+</html>

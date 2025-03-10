@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lilly{
+            background-color: blue;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .lilly:hover{
+            background-color:purple;
+        }       
+        .lilly:focus{
+            background-color: aqua;
+        }
+        .lilly:active{
+            background-color:green;
+        }
+        li:nth-child(3n){
+            color: rebeccapurple;
+        }
+        li:nth-child(2n){
+            background-color: lightgray;
+        }
+        .PsuedoEelement::before
+        {
+            content: "* ";
+            color: blue;
+        }
+        .PsuedoEelement::after{
+            content: " *";
+            color: blue;
+        }
+        /*If you want gets work the first letter then do comment on after and befoere psuedoelement color property*/
+        .PsuedoEelement::first-letter{
+            color: blueviolet;
+        }
+        .PsuedoEelement::first-line{
+            color: pink;
+        }
+        ::selection{
+            background-color: aqua;
+        }
+        .insetshadow{
+            box-shadow: 5px 5px 10px rgb(138, 138, 217);
+        }
+        div{
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            background-color: pink;
+            border: 1px solid rgb(196, 124, 51);
+        }
+    </style>
+</head>
+<body>
+    <!-- Psuedo class -->
+    <a class="lilly" href="https://www.google.com">Visit the Sight</a>
+    <br><button class="lilly">Example</button>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+    </ul>
+    <!-- Psuedo elements -->
+     <h1 class="PsuedoEelement">First class Of Frontend <br>Web application</h1>
+     <!-- Shadow element -->
+      <div class="insetshadow">This is the inset shadow </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,p{
+            background-color: gray;
+        }
+        /*@media(max-width:1024px) {
+            h1,p{
+                background-color: blue;
+            } 
+        }*/
+        @media (min-width:420px) and (max-width:1024px) and (orientation:portrait) {
+            h1,p{
+                color: blue;
+            }
+            
+        }
+        @media (orientation:landscape) {
+            h1,p{
+                color:green;
+            }
+            
+        }
+           /*@media(min-width:420px) {
+            h1,p{
+                background-color: pink;
+            } 
+        }*/
+    </style>
+</head>
+<body>
+    <h1>The Cascade determines the order in which styles are applied when multiple rules target the same element. </h1>
+    <p>CSS resolves conflicts by considering three main factors: Importance, Specificity, and Source Order.</p>
+</body>
+</html>

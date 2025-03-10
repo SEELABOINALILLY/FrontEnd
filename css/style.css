@@ -1,3 +1,9 @@
 p{
     font-style: italic;
 }
+.example {
+    font-family: "Monomakh", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
