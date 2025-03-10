@@ -20,12 +20,21 @@
             100%{left:0}
         }
         .abc{
-            width: 100px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
             background-color: rgb(153, 153, 239);
+            border-radius:10px;
             position: relative;
             top:100px;
             /* bottom:100px; right:100px; left:100px*/
+        }
+        .parent{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(29, 218, 92);
+            border-radius:10px;
+            position: relative;
+            
         }
     </style>
 </head>
@@ -44,7 +53,11 @@
             <div style="display: table-cell; padding:20px; background-color:rgb(209, 198, 186)">cell6</div>
         </div>
      </div>
-     <!-- positioning property -->
-     <div class="abc">relative positing</div>
+     <!-- positioning : relative -->
+     <div class="abc">Relative positioning</div>
+     <!-- Position : absolute -->
+      <div class="parent">
+        <div>Absolute positioning</div>
+      </div>
 </body>
 </html>
