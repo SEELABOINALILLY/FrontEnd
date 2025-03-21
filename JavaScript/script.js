@@ -33,3 +33,26 @@ for(l=0;l<=num;l++)
         console.log(l)
     }
 }
+
+let number=prompt("Enter a number")
+function printPrimes(number)
+{
+    if(num<2) return false;
+    for(let i=2;i<number; i++)
+    {
+        if(number%i===0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+console.log("Prime numbers ")
+for(let i=2;i<number;i++)
+{
+    if(printPrimes(i))
+    {
+        console.log(i)
+    }
+}
+
