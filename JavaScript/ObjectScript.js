@@ -160,9 +160,8 @@ parrot.__proto__=animal;
 console.log(parrot.barking());
 
 //prototype chaining
-
 let abc={
-    name:"Divya",
+    studentName:"Divya",
     singer(){
         console.log("She can sing and dance");
     }
@@ -175,3 +174,4 @@ let  bcd={
     __proto__:zyx
 }
 bcd.singer();
+bcd.hasProperty(studentName);
