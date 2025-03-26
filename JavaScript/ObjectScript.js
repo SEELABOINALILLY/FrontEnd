@@ -158,3 +158,20 @@ let parrot={
 }
 parrot.__proto__=animal;
 console.log(parrot.barking());
+
+//prototype chaining
+
+let abc={
+    name:"Divya",
+    singer(){
+        console.log("She can sing and dance");
+    }
+}
+let zyx={
+    lastname:"Sri",
+    __proto__:abc
+}
+let  bcd={
+    __proto__:zyx
+}
+bcd.singer();
