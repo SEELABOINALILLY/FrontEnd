@@ -142,3 +142,19 @@ let userInfo1 = {
     Car2.__proto__=Car;
     console.log(Car2.model);
     console.log(Car2.model2);
+
+//accessing methods
+let animal={
+    name:"Dog",
+    barking(){
+        console.log("Bow bow");
+    }
+}
+let parrot={
+    color:"Green",
+    eating(){
+        console.log("Eats fruits");
+    }
+}
+parrot.__proto__=animal;
+console.log(parrot.barking());
