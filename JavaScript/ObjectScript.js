@@ -131,3 +131,14 @@ let userInfo1 = {
    console.log(incrementcounter());
    console.log(incrementcounter());
    console.log(incrementcounter());
+
+   //prototype inheritance __proto__ =syntax
+   let Car={
+     model:"Toyota"
+   };
+   let Car2={
+      model2:"Tata"
+   };
+    Car2.__proto__=Car;
+    console.log(Car2.model);
+    console.log(Car2.model2);
