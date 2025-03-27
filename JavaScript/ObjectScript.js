@@ -171,7 +171,34 @@ let zyx={
     __proto__:abc
 }
 let  bcd={
-    __proto__:zyx
+    __proto__:zyx,
+    l:"kndsbjf"
 }
 bcd.singer();
-bcd.hasProperty(studentName);
+
+
+
+//call and apply
+let emp1={FirstName:"Sri",Lastname:"Lilly"};
+let emp2={FirstName:"Sri",Lastname:"Lilly"};
+
+function invite(greeting1,greetings2){
+    console.log(greeting1+" "+this.FirstName+" "+greetings2+" "+this.Lastname);
+}
+invite.call(emp1, "Hello", "How are you");
+invite.apply(emp2,["Hello","How are you"]);
+
+
+//Bind
+let employee={FirstName:"Divya",Lastname:"Sai"};
+let employee2={FirstName:"Pramitha",Lastname:"Sri"};
+
+function inviting(gret1,gret2){
+    console.log(gret1+" "+this.FirstName+" "+this.Lastname+" "+gret2);
+}
+var inviteemployee1=inviting.bind(employee);
+var inviteemployee2=inviting.bind(employee2);
+inviteemployee1("Hello","How are you");
+inviteemployee2("Hello","How are you");
+
+
