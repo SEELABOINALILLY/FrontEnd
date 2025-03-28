@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="Lilly">Modifying html content<span>  another content</span></div>
+<div id="Lilly1">Modifying html content<span>  another content</span></div>
+<div id="Lilly2">Modifying html content<span>  another content</span></div>
+<div id="Lilly3">Modifying html content<span>  another content</span></div>
+<script>
+    let element=document.getElementById("Lilly");
+    console.log(element.innerHTML);
+    element.innerHTML="New content";
+</script>
+<script>
+    let element2=document.getElementById("Lilly1");
+    console.log(element2.textContent);
+    element2.textContent="Lilly sri";
+</script>
+<script>
+    let element3=document.getElementById("Lilly2");
+    console.log(element3.innerText);
+    element3.innerText="Durga sri";
+</script>
+<script>
+    let element4=document.getElementById("Lilly3");
+    console.log(element4.outerHTML);
+    element4.outerHTML="<div>djfkgjdmhg</div>";
+</script>
+</body>
+</html>
