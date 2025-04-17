@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilly Seelaboina - Portfolio</title>
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f1f1f1;
+    color: #333;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+header .contact {
+    font-size: 16px;
+}
+
+header .contact a {
+    color: #fff;
+    margin: 0 15px;
+}
+
+header .contact a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content Section */
+section {
+    padding: 50px 20px;
+    margin: 40px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: slideIn 0.8s ease-in-out forwards;
+}
+
+section h2 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section h3 {
+    color: #555;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+ul li {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul li:hover {
+    color: #333;
+    transform: translateX(10px);
+}
+
+ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 24px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-out;
+}
+
+.slide-in {
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Container for Centering Content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section h3 {
+        font-size: 20px;
+    }
+
+    ul li {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lilly Seelaboina</h1>
+            <p class="contact">
+                Andhra Pradesh, India | 8179594663 | <a href="mailto:seelaboinalilly@gmail.com">seelaboinalilly@gmail.com</a><br>
+                <a href="https://linkedin.com/in/lilly-seelaboina-52b07122b" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/SEELABOINALILLY" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </header>
+
+    <section id="profile">
+        <div class="container">
+            <h2 class="fade-in">Profile Summary</h2>
+            <p class="fade-in">Aspiring IT professional passionate about software development, database management, and Web API services. Skilled in Java, C#, and SQL, with hands-on project experience. Eager to contribute to a growth-oriented organization and stay updated with evolving technologies.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="fade-in">Technical Skills</h2>
+            <ul class="slide-in">
+                <li><strong>Programming:</strong> Java, C#, C++, .NET</li>
+                <li><strong>Database:</strong> SQL, Stored Procedures, SQL Server Connectivity</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Tools:</strong> Visual Studio, Git, MySQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="fade-in">Work Experience</h2>
+            <h3 class="fade-in">Web API Development – Personal & Learning Projects</h3>
+            <ul class="slide-in">
+                <li>Built simple Web API projects using C# and Visual Studio.</li>
+                <li>Performed full CRUD operations with stored procedure integration.</li>
+                <li>Connected APIs to SQL Server, ensuring secure and efficient data transactions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="fade-in">Projects</h2>
+            <h3 class="fade-in">SVEC Learning Assessment and Management System</h3>
+            <p class="fade-in">Developed to manage student evaluations and educational resources effectively. Streamlined academic data processing and improved access to learning materials.</p>
+            <h3 class="fade-in">Online Book Recommendation System using Machine Learning</h3>
+            <p class="fade-in">Built a personalized recommendation engine using KNN and filtering algorithms. Suggested books based on user history and preferences for a better reading experience.</p>
+            
+            <!-- Weather Info Project Section -->
+            <h3 class="fade-in">Weather Information Project</h3>
+            <p class="fade-in">Built a weather info application that provides real-time weather data based on the city entered by the user. The application fetches weather data using an external API and displays temperature, humidity, and conditions.</p>
+            <p class="fade-in">Technologies: JavaScript, HTML, CSS, OpenWeatherMap API</p>
+
+            <!-- QR Code Generator Project Section -->
+            <h3 class="fade-in">QR Code Generator Project</h3>
+            <p class="fade-in">Developed a simple QR Code generator that converts text or URL input into a scannable QR code. This project was built with JavaScript and an external QR code generation API.</p>
+            <p class="fade-in">Technologies: JavaScript, HTML, CSS, QR Code API</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container">
+            <h2 class="fade-in">Certifications & Trainings</h2>
+            <ul class="slide-in">
+                <li>Java Full Stack Development – Wipro TalentNext</li>
+                <li>Data Science for Engineers – NPTEL Certification (57%)</li>
+                <li>TCS CodeVita Season 11 – Global Rank: 2362</li>
+                <li>Java Full Stack Training – Codegnan Destination</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="fade-in">Education</h2>
+            <h3 class="fade-in">Bachelor of Technology (CSE)</h3>
+            <p class="fade-in">Sri Vasavi Engineering College, JNTUK | 2020 – 2024 | 78%</p>
+            <h3 class="fade-in">Intermediate – MPC</h3>
+            <p class="fade-in">Sri Chaitanya Junior College, Bhimavaram | 2018 – 2020 | 9.09 GPA</p>
+            <h3 class="fade-in">SSC – 10th Standard</h3>
+            <p class="fade-in">Mother Marcella EM High School | 2018 | 9.7 GPA</p>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div class="container">
+            <h2 class="fade-in">Languages</h2>
+            <ul class="slide-in">
+                <li>English</li>
+                <li>Telugu</li>
+                <li>Hindi</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2 class="fade-in">Hobbies & Interests</h2>
+            <ul class="slide-in">
+                <li>Exploring new technologies and programming languages</li>
+                <li>Traveling and discovering new places</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Declaration: I hereby declare that the above information is true and correct to the best of my knowledge. – Lilly Seelaboina</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
